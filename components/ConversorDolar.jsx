@@ -4,7 +4,7 @@ function ConversorPesos() {
   const [conversionRates, setConversionRates] = useState(null);
   const [amount, setAmount] = useState(1);
   const [convertedAmount, setConvertedAmount] = useState(null);
-  const [selectedCurrency, setSelectedCurrency] = useState('USD'); 
+  const [selectedCurrency, setSelectedCurrency] = useState('USD');
   const handleAmountChange = (event) => {
     setAmount(event.target.value);
   };
@@ -16,7 +16,7 @@ function ConversorPesos() {
   const convertCurrency = () => {
     if (conversionRates !== null) {
       const result = amount / conversionRates[selectedCurrency];
-      setConvertedAmount(result.toFixed(2)); 
+      setConvertedAmount(result.toFixed(2));
     }
   };
 
@@ -26,8 +26,8 @@ function ConversorPesos() {
       .then((data) => {
         setConversionRates({
           ...data.conversion_rates,
-          USD: 349.96, 
-          EUR: 373.82, 
+          USD: 349.96,
+          EUR: 373.82,
         });
       })
       .catch((error) => {
@@ -38,8 +38,8 @@ function ConversorPesos() {
   return (
     <div className="container">
       <h1 className="textoPesoDolar">Convertidor de Moneda:</h1>
-      <h2>Peso Argentino a Otras Divisas</h2>
-      <label>Ingresa la cantidad en ARS:</label>
+      <h2>Pesos argentinos a otras divisas</h2>
+      <label>Ingresá la cantidad en ARS:</label>
       <br />
       <input
         type="number"
@@ -47,7 +47,7 @@ function ConversorPesos() {
         value={amount}
         onChange={handleAmountChange}
       />
-      <label>Selecciona la moneda de destino:</label>
+      <label>Seleccioná la moneda de destino:</label>
       <select
         id="monedaDestino"
         value={selectedCurrency}
@@ -67,8 +67,9 @@ function ConversorPesos() {
       </button>
       {convertedAmount !== null && (
         <p id="resultadoPesos">
-          {amount} Peso Argentino equivale a {convertedAmount} {selectedCurrency}.
+          {amount == 1 ? <p>{amount} Peso Argentino equivale a {convertedAmount} {selectedCurrency}</p> : <p>{amount} Pesos Argentinos equivalen a {convertedAmount} {selectedCurrency}.</p>}
         </p>
+
       )}
     </div>
   );

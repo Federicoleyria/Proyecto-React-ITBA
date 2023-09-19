@@ -16,10 +16,10 @@ function Inversiones() {
         <>
             <div className="container">
                 <h1>Calcular préstamos</h1>
-                <label>Ingresa el monto del préstamo:</label>
+                <label>Ingresá el monto del préstamo:</label>
                 <br />
                 <input type="number" id="monto" />
-                <label>Selecciona el plazo en meses:</label>
+                <label>Seleccioná el plazo en meses:</label>
                 <select id="cuotas">
                     <option value="12">12 meses</option>
                     <option value="18">18 meses</option>
@@ -29,7 +29,7 @@ function Inversiones() {
                 <button className="button" onClick={calcular}>Calcular</button>
                 <p>{resultado}</p>
                 <br />
-                <p className="cursiva">La tasa de interes semestral es de un 118%</p>
+                <p className="cursiva">La tasa de interés semestral es de un 118%</p>
             </div>
         </>
 

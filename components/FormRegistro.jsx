@@ -4,7 +4,7 @@ function FormRegistro() {
     return (
         <>
         <div className="container2"> 
-        <h1>Registro</h1>
+        <h1>Registrate</h1>
             <form className="form" action="">
                 <label htmlFor="nombre">Nombre:</label>
                 <input type="text" id="nombre" value={FormData.Nombre} required />
@@ -18,12 +18,12 @@ function FormRegistro() {
                 <input type="text" id="user" value={FormData.User} />
                 <label htmlFor="password">Cree una contraseña</label>
                 <input type="password" id="password" value={FormData.Password} />
-                <label htmlFor="passwordc">Cree una contraseña</label>
+                <label htmlFor="passwordc">Vuelva a ingresar la contraseña</label>
                 <input type="password" id="passwordc" value={FormData.Passwordc} />
             </form>
             <div class="link">
-                <p>¡Ya tenes cuenta? </p>
-                <Link to="/ingresar">Inicia sesión aca.</Link>
+                <p>¿Ya tenés cuenta? </p>
+                <Link to="/ingresar">Iniciá sesión acá</Link>
             </div>
         </div>
         </>

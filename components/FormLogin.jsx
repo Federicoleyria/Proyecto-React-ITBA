@@ -15,8 +15,8 @@ function FormLogin() {
             </form>
                 <button class="button">INICIAR SESIÓN</button>
                 <div class="link">
-                    <p>¿No sos usuario de banco barro? </p>
-                    <Link to="/registrarse">registrate aca</Link>
+                    <p>¿No sos usuario de Banco Barro? </p>
+                    <Link to="/registrarse">Registrate acá</Link>
                 </div>
         </div>
         </>

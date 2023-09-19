@@ -9,7 +9,7 @@ function PaginaAyuda() {
         <header>
             <Header/>
         </header>
-        <main>
+        <main className="main-ayuda">
             <NavbarLateral/>
             <Ayuda/>
         </main>

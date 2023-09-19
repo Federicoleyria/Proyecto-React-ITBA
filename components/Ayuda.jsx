@@ -1,118 +1,134 @@
+import { Link } from "react-router-dom";
+
 function Ayuda() {
     return (
         <>
-        <div className="info">
+            <div className="ayuda-banco">
 
-            <h1>Bienvenido a la página de ayuda al cliente de Banco Barro</h1>
+                <h1>Bienvenido a la página de ayuda al cliente de Banco Barro</h1>
 
-            En Banco Barro, estamos comprometidos en brindarte la mejor experiencia bancaria posible. Sabemos que a veces pueden surgir preguntas o inquietudes, y estamos aquí para ayudarte en cada paso del camino. Esta página de ayuda al cliente está diseñada para proporcionarte respuestas a las preguntas más frecuentes y ofrecerte información útil para aprovechar al máximo nuestros servicios.
+                <p>En Banco Barro, estamos comprometidos en brindarte la mejor experiencia bancaria posible. Sabemos que a veces pueden surgir preguntas o inquietudes, y estamos aquí para ayudarte en cada paso del camino. Esta página de ayuda al cliente está diseñada para proporcionarte respuestas a las preguntas más frecuentes y ofrecerte información útil para aprovechar al máximo nuestros servicios.</p>
 
-            Contenido
+                <h3>Contenido</h3>
+                <ul>
 
-            1. **Preguntas Frecuentes**
-            - 1.1 ¿Cómo abrir una cuenta en Banco Barro?
-            - 1.2 ¿Cómo puedo acceder a mi cuenta en línea?
-            - 1.3 ¿Cómo puedo realizar transferencias bancarias?
-            - 1.4 ¿Qué debo hacer si pierdo mi tarjeta de débito/crédito?
-            - 1.5 ¿Cómo puedo contactar al servicio al cliente de Banco Barro?
+                    <h4>1. Preguntas Frecuentes</h4>
+                    <ul>
+                        <li>1.1 ¿Cómo abrir una cuenta en Banco Barro?</li>
+                        <li>1.2 ¿Cómo puedo acceder a mi cuenta en línea?</li>
+                        <li>1.3 ¿Cómo puedo realizar transferencias bancarias?</li>
+                        <li>1.4 ¿Qué debo hacer si pierdo mi tarjeta de débito/crédito?</li>
+                        <li>1.5 ¿Cómo puedo contactar al servicio al cliente de Banco Barro?</li>
+                    </ul>
 
-            2. **Servicios y Productos**
-            - 2.1 Cuentas de Ahorro y Corriente
-            - 2.2 Tarjetas de Débito y Crédito
-            - 2.3 Préstamos y Créditos
-            - 2.4 Servicios en Línea
-            - 2.5 Banca Móvil
+                    <h4>2.  Servicios y Productos</h4>
+                    <ul>
+                        <li>2.1 Cuentas de Ahorro y Corriente</li>
+                        <li>2.2 Tarjetas de Débito y Crédito</li>
+                        <li>2.3 Préstamos y Créditos</li>
+                        <li>2.4 Servicios en Línea</li>
+                        <li>2.5 Banca Móvil</li>
+                    </ul>
 
-            3. **Seguridad Financiera**
-            - 3.1 Seguridad en Línea
-            - 3.2 Protección contra Fraudes
-            - 3.3 Consejos de Seguridad
+                    <h4>3.  Seguridad Financiera</h4>
+                    <ul>
+                        <li>3.1 Seguridad en Línea</li>
+                        <li>3.2 Protección contra Fraudes</li>
+                        <li>3.3 Consejos de Seguridad</li>
+                    </ul>
 
-            4. **Contacto y Soporte**
-            - 4.1 Números de Teléfono
-            - 4.2 Sucursales
-            - 4.3 Chat en Línea
-            - 4.4 Formulario de Contacto
+                    <h4>4.  Contacto y Soporte</h4>
+                    <ul>
+                        <li>4.1 Números de Teléfono</li>
+                        <li>4.2 Sucursales</li>
+                        <li>4.3 Chat en Línea</li>
+                        <li>4.4 Formulario de Contacto</li>
+                    </ul>
+                </ul>
 
-            ## Preguntas Frecuentes
+                <h4>1. Preguntas Frecuentes</h4>
 
-            ### 1.1 ¿Cómo abrir una cuenta en Banco Barro?
+                <h5> 1.1 ¿Cómo abrir una cuenta en Banco Barro?</h5>
 
-            Abrir una cuenta en Banco Barro es fácil y conveniente. Puedes hacerlo en línea a través de nuestro sitio web o visitar una de nuestras sucursales. Para obtener más detalles sobre los documentos necesarios y el proceso de apertura de cuentas, visita nuestra [página de apertura de cuentas](#).
+                <p>Abrir una cuenta en Banco Barro es fácil y conveniente. Puedes hacerlo en línea a través de nuestro sitio web o visitar una de nuestras sucursales.</p>
 
-            ### 1.2 ¿Cómo puedo acceder a mi cuenta en línea?
+                <h5> 1.2 ¿Cómo puedo acceder a mi cuenta en línea?</h5>
+                <p>Puedes acceder a tu cuenta en línea a través de nuestro servicio de banca en línea. 
+                    Para obtener instrucciones detalladas sobre cómo configurar y utilizar la banca en línea de Banco Barro, consulta la página de contacto.</p>
 
-            Puedes acceder a tu cuenta en línea a través de nuestro servicio de banca en línea. Para obtener instrucciones detalladas sobre cómo configurar y utilizar la banca en línea de Banco Barro, consulta nuestra [guía de acceso en línea](#).
+                <h5> 1.3 ¿Cómo puedo realizar transferencias bancarias?</h5>
+                <p>Hacer transferencias bancarias es sencillo con Banco Barro. Puedes transferir fondos a otras cuentas dentro del banco o a cuentas externas a través de nuestra plataforma en línea. 
+                    Obtén más información sobre cómo realizar transferencias visitando nuestra sección de transferencias.</p>
 
-            ### 1.3 ¿Cómo puedo realizar transferencias bancarias?
+                <h5> 1.4 ¿Qué debo hacer si pierdo mi tarjeta de débito/crédito?</h5>
 
-            Hacer transferencias bancarias es sencillo con Banco Barro. Puedes transferir fondos a otras cuentas dentro del banco o a cuentas externas a través de nuestra plataforma en línea. Obtén más información sobre cómo realizar transferencias visitando nuestra [sección de transferencias](#).
+                <p>En caso de extravío o robo de tu tarjeta de débito o crédito de Banco Barro, es importante tomar medidas inmediatas para proteger tu cuenta. 
+                    Encuentra los pasos que debes seguir en nuestra guía de tarjetas perdidas o robadas.</p>
 
-            ### 1.4 ¿Qué debo hacer si pierdo mi tarjeta de débito/crédito?
+                <h5> 1.5 ¿Cómo puedo contactar al servicio al cliente de Banco Barro?</h5>
 
-            En caso de extravío o robo de tu tarjeta de débito o crédito de Banco Barro, es importante tomar medidas inmediatas para proteger tu cuenta. Encuentra los pasos que debes seguir en nuestra [guía de tarjetas perdidas o robadas](#).
+                <p>Nuestro equipo de servicio al cliente está disponible para ayudarte con tus preguntas y preocupaciones. 
+                    uedes comunicarte con nosotros a través de nuestros números de teléfono, chat en línea o visitando una de nuestras sucursales. Obtén más información en nuestra página de contacto.</p>
 
-            ### 1.5 ¿Cómo puedo contactar al servicio al cliente de Banco Barro?
+                <h4>2. Servicios y Productos</h4>
 
-            Nuestro equipo de servicio al cliente está disponible para ayudarte con tus preguntas y preocupaciones. Puedes comunicarte con nosotros a través de nuestros números de teléfono, chat en línea o visitando una de nuestras sucursales. Obtén más información en nuestra [página de contacto](#).
+                <h5> 2.1 Cuentas de Ahorro y Corriente</h5>
 
-            ## Servicios y Productos
+                <p>En Banco Barro, ofrecemos una variedad de cuentas de ahorro y corriente diseñadas para satisfacer tus necesidades financieras. 
+                    Descubre nuestras opciones de cuentas y sus beneficios en nuestra sección de cuentas.</p>
 
-            ### 2.1 Cuentas de Ahorro y Corriente
+                <h5> 2.2 Tarjetas de Débito y Crédito</h5>
 
-            En Banco Barro, ofrecemos una variedad de cuentas de ahorro y corriente diseñadas para satisfacer tus necesidades financieras. Descubre nuestras opciones de cuentas y sus beneficios en nuestra [sección de cuentas](#).
+                <p>Nuestras tarjetas de débito y crédito ofrecen comodidad y flexibilidad. Obtén información detallada sobre cada tipo de tarjeta y cómo solicitarlas en nuestra página de tarjetas.</p>
 
-            ### 2.2 Tarjetas de Débito y Crédito
+                <h5> 2.3 Préstamos y Créditos</h5>
 
-            Nuestras tarjetas de débito y crédito ofrecen comodidad y flexibilidad. Obtén información detallada sobre cada tipo de tarjeta y cómo solicitarlas en nuestra [página de tarjetas](#).
+                <p>Si estás buscando financiamiento, tenemos una variedad de opciones de préstamos y créditos disponibles. Explora nuestras ofertas y aprende cómo solicitarlos en nuestra sección de préstamos.</p>
 
-            ### 2.3 Préstamos y Créditos
+                <h5> 2.4 Servicios en Línea</h5>
 
-            Si estás buscando financiamiento, tenemos una variedad de opciones de préstamos y créditos disponibles. Explora nuestras ofertas y aprende cómo solicitarlos en nuestra [sección de préstamos](#).
+                <p>Nuestra plataforma de banca en línea y banca móvil te permite gestionar tus cuentas y realizar transacciones desde cualquier lugar. Obtén información sobre cómo aprovechar al máximo estos servicios en nuestra página de servicios en línea.</p>
 
-            ### 2.4 Servicios en Línea
+                <h5> 2.5 Banca Móvil</h5>
 
-            Nuestra plataforma de banca en línea y banca móvil te permite gestionar tus cuentas y realizar transacciones desde cualquier lugar. Obtén información sobre cómo aprovechar al máximo estos servicios en nuestra [página de servicios en línea](#).
+                <p>La banca móvil de Banco Barro te permite realizar transacciones y acceder a tu cuenta desde tu dispositivo móvil. Descubre cómo configurar y usar la banca móvil en nuestra guía de banca móvil.</p>
 
-            ### 2.5 Banca Móvil
+                <h4>3. Seguridad Financiera</h4>
 
-            La banca móvil de Banco Barro te permite realizar transacciones y acceder a tu cuenta desde tu dispositivo móvil. Descubre cómo configurar y usar la banca móvil en nuestra [guía de banca móvil](#).
+                <h5> 3.1 Seguridad en Línea</h5>
 
-            ## Seguridad Financiera
+                <p>La seguridad de tus datos y transacciones es nuestra prioridad. Obtén consejos y prácticas recomendadas para mantener tus cuentas seguras en nuestra sección de seguridad en línea.</p>
 
-            ### 3.1 Seguridad en Línea
+                <h5> 3.2 Protección contra Fraudes</h5>
 
-            La seguridad de tus datos y transacciones es nuestra prioridad. Obtén consejos y prácticas recomendadas para mantener tus cuentas seguras en nuestra [sección de seguridad en línea](#).
+                <p>Aprende cómo protegerte contra fraudes y estafas financieras con los recursos y consejos que ofrecemos en nuestra página de protección contra fraudes.</p>
 
-            ### 3.2 Protección contra Fraudes
+                <h5> 3.3 Consejos de Seguridad</h5>
 
-            Aprende cómo protegerte contra fraudes y estafas financieras con los recursos y consejos que ofrecemos en nuestra [página de protección contra fraudes](#).
+                <p>Descubre consejos útiles para proteger tu información personal y financiera en nuestra sección de consejos de seguridad.</p>
 
-            ### 3.3 Consejos de Seguridad
+                <h4>4. Contacto y Soporte</h4>
 
-            Descubre consejos útiles para proteger tu información personal y financiera en nuestra [sección de consejos de seguridad](#).
+                <h5> 4.1 Números de Teléfono</h5>
 
-            ## Contacto y Soporte
+                <p>Encuentra los números de teléfono de contacto de Banco Barro en nuestra página de números de teléfono.</p>
 
-            ### 4.1 Números de Teléfono
+                <h5> 4.2 Sucursales</h5>
 
-            Encuentra los números de teléfono de contacto de Banco Barro en nuestra [página de números de teléfono](#).
+                <p>Localiza una sucursal de Banco Barro cercana a ti y conoce sus horarios de atención en nuestra página de sucursales.</p>
 
-            ### 4.2 Sucursales
+                <h5> 4.3 Chat en Línea</h5>
 
-            Localiza una sucursal de Banco Barro cercana a ti y conoce sus horarios de atención en nuestra [página de sucursales](#).
+                <p>Si prefieres el chat en línea, puedes comunicarte con nuestro equipo de soporte en tiempo real a través de nuestra opción de chat en línea.</p>
 
-            ### 4.3 Chat en Línea
+                <h5> 4.4 Formulario de Contacto </h5>
 
-            Si prefieres el chat en línea, puedes comunicarte con nuestro equipo de soporte en tiempo real a través de nuestra [opción de chat en línea](#).
+                <p>También puedes completar nuestro formulario en línea para dejar comentarios, preguntas o sugerencias en nuestra página de formulario de contacto.</p>
 
-            ### 4.4 Formulario de Contacto
+                <h3 className="fin">En Banco Barro, estamos aquí para ayudarte en cada paso del camino. Siempre nos esforzamos por mejorar nuestros servicios y proporcionar la mejor atención al cliente posible. 
+                Si tienes alguna pregunta o necesitas asistencia, no dudes en contactarnos. <br />¡Gracias por elegir Banco Barro como tu banco de confianza!</h3>
 
-            También puedes completar nuestro formulario en línea para dejar comentarios, preguntas o sugerencias en nuestra [página de formulario de contacto](#).
-
-            En Banco Barro, estamos aquí para ayudarte en cada paso del camino. Siempre nos esforzamos por mejorar nuestros servicios y proporcionar la mejor atención al cliente posible. Si tienes alguna pregunta o necesitas asistencia, no dudes en contactarnos. ¡Gracias por elegir Banco Barro como tu banco de confianza!
-            
-        </div>
+            </div>
         </>
     );
 }
