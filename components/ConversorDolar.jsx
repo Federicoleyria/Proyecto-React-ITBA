@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 function ConversorPesos() {
-  const [conversionRate, setConversionRate] = useState(null);
+  const [conversionRates, setConversionRates] = useState(null);
   const [amount, setAmount] = useState(1);
   const [convertedAmount, setConvertedAmount] = useState(null);
-  const [selectedCurrency, setSelectedCurrency] = useState('USD'); // Estado para la moneda de destino
-
+  const [selectedCurrency, setSelectedCurrency] = useState('USD'); 
   const handleAmountChange = (event) => {
     setAmount(event.target.value);
   };
@@ -15,18 +14,21 @@ function ConversorPesos() {
   };
 
   const convertCurrency = () => {
-    if (conversionRate !== null) {
-      const result = amount / conversionRate[selectedCurrency];
-      setConvertedAmount(result.toFixed(2)); // Redondeamos el resultado a dos decimales
+    if (conversionRates !== null) {
+      const result = amount / conversionRates[selectedCurrency];
+      setConvertedAmount(result.toFixed(2)); 
     }
   };
 
   useEffect(() => {
-    // Obtener tasas de conversión desde Peso Argentino (ARS) a otras divisas
     fetch('https://v6.exchangerate-api.com/v6/f2753e2e7a865582804f2f3d/latest/ARS')
       .then((response) => response.json())
       .then((data) => {
-        setConversionRate(data.conversion_rates);
+        setConversionRates({
+          ...data.conversion_rates,
+          USD: 349.96, 
+          EUR: 373.82, 
+        });
       })
       .catch((error) => {
         console.error('Error al obtener la tasa de conversión:', error);
@@ -51,8 +53,8 @@ function ConversorPesos() {
         value={selectedCurrency}
         onChange={handleCurrencyChange}
       >
-        {conversionRate !== null &&
-          Object.keys(conversionRate).map((currency) => (
+        {conversionRates !== null &&
+          Object.keys(conversionRates).map((currency) => (
             <option key={currency} value={currency}>
               {currency}
             </option>
